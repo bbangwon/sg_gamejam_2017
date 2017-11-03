@@ -5,16 +5,16 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{5979BB63-777B-E004-6CB2-9B54F2B98918}</ProjectGuid>
+    <ProjectGuid>{50123E28-01AD-D2C2-7E40-6D2D564326E7}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <AssemblyName>Assembly-CSharp.dll</AssemblyName>
+    <AssemblyName>Assembly-CSharp-firstpass.dll</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
     <CompilerResponseFile></CompilerResponseFile>
-    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityProjectType>GamePlugins:3</UnityProjectType>
     <UnityBuildTarget>Android:13</UnityBuildTarget>
     <UnityVersion>2017.2.0f3</UnityVersion>
     <RootNamespace></RootNamespace>
@@ -225,16 +225,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="smilegate_gamejam.Plugins.csproj">
-      <Project>{50123E28-01AD-D2C2-7E40-6D2D564326E7}</Project>
-      <Name>smilegate_gamejam.Plugins</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Assets\Scripts\SGGameManager.cs" />
-    <Compile Include="Assets\Scripts\SGHero.cs" />
-    <Compile Include="Assets\Scripts\SGMonster.cs" />
-    <Compile Include="Assets\Scripts\SGSingleton.cs" />
+    <Compile Include="Assets\Standard Assets\CNControls\Examples\Scenes\2D\Scripts\Camera2DFollow.cs" />
+    <Compile Include="Assets\Standard Assets\CNControls\Examples\Scenes\2D\Scripts\Platformer2DUserControl.cs" />
+    <Compile Include="Assets\Standard Assets\CNControls\Examples\Scenes\2D\Scripts\PlatformerCharacter2D.cs" />
+    <Compile Include="Assets\Standard Assets\CNControls\Examples\Scenes\2D\Scripts\Restarter.cs" />
+    <Compile Include="Assets\Standard Assets\CNControls\Examples\Scenes\Custom Joystick\FourWayController.cs" />
+    <Compile Include="Assets\Standard Assets\CNControls\Examples\Scenes\Third Person\AbstractTargetFollower.cs" />
+    <Compile Include="Assets\Standard Assets\CNControls\Examples\Scenes\Third Person\AutoCam.cs" />
+    <Compile Include="Assets\Standard Assets\CNControls\Examples\Scenes\Third Person\PivotBasedCameraRig.cs" />
+    <Compile Include="Assets\Standard Assets\CNControls\Examples\Scenes\Third Person\ThidPersonExampleController.cs" />
+    <Compile Include="Assets\Standard Assets\CNControls\Examples\Scenes\Touchpad Camera\RotateCamera.cs" />
+    <Compile Include="Assets\Standard Assets\CNControls\Examples\Scenes\Touchpad Camera\RotationConstraint.cs" />
+    <Compile Include="Assets\Standard Assets\CNControls\Scripts\CnInputSystem\CnInputManager.cs" />
+    <Compile Include="Assets\Standard Assets\CNControls\Scripts\CnInputSystem\VirtualAxis.cs" />
+    <Compile Include="Assets\Standard Assets\CNControls\Scripts\CnInputSystem\VirtualButton.cs" />
+    <Compile Include="Assets\Standard Assets\CNControls\Scripts\Controllers\CommonOnScreenControl.cs" />
+    <Compile Include="Assets\Standard Assets\CNControls\Scripts\Controllers\Dpad.cs" />
+    <Compile Include="Assets\Standard Assets\CNControls\Scripts\Controllers\DpadAxis.cs" />
+    <Compile Include="Assets\Standard Assets\CNControls\Scripts\Controllers\SensitiveJoystick.cs" />
+    <Compile Include="Assets\Standard Assets\CNControls\Scripts\Controllers\SimpleButton.cs" />
+    <Compile Include="Assets\Standard Assets\CNControls\Scripts\Controllers\SimpleJoystick.cs" />
+    <Compile Include="Assets\Standard Assets\CNControls\Scripts\Controllers\Touchpad.cs" />
+    <Compile Include="Assets\Standard Assets\CNControls\Scripts\EmptyGraphic.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

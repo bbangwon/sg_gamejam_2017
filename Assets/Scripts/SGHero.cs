@@ -1,36 +1,28 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using CnControls;
 
 public class SGHero : MonoBehaviour {
 
-    public SGJoystick joystick;
-    Vector3 _moveVector;
     public float moveSpeed;
 
     // Use this for initialization
     void Start () {
-        _moveVector = Vector3.zero;
-
+        
     }
 	
 	// Update is called once per frame
 	void Update () {
-        HandleMoveInput();
     }
 
-    void FixedUpdate()
+    private void FixedUpdate()
     {
-        Move(); 
-    }
+        float h = CnInputManager.GetAxis("Horizontal");
+        float v = CnInputManager.GetAxis("Vertical");
 
-    public void HandleMoveInput()
-    {
-        _moveVector = new Vector3(joystick.GetHorizontalValue(), joystick.GetVerticalValue(), 0f).normalized;
-    }
+        Debug.Log(h);
 
-    public void Move()
-    {
-        transform.Translate(_moveVector * moveSpeed * Time.deltaTime);
+        transform.Translate(new Vector3(h, v, 0f) * moveSpeed * Time.deltaTime);
     }
 }
