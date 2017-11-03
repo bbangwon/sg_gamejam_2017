@@ -197,6 +197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d223f68dc9dbde428e247b734b7321b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHP: 500
   moveSpeed: 3
 --- !u!1 &297214775
 GameObject:
@@ -614,6 +615,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32c78dfb7a0e615429763cb21c2523c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHP: 100
   moveSpeed: 1
 --- !u!1 &1971623072
 GameObject:

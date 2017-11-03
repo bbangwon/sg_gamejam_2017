@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using CnControls;
 
-public class SGHero : MonoBehaviour {
+public class SGHero : SGBCharacter
+{
 
     public float moveSpeed;
 

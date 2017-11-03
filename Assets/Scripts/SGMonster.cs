@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SGMonster : MonoBehaviour {
-
+public class SGMonster : SGBCharacter
+{
     public float moveSpeed;
 
 	// Use this for initialization
